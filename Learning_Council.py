@@ -4,7 +4,7 @@ import pandas as pd
 
 # --- Google Sheets setup ---
 # --- Connect to Google Sheets using Streamlit secrets ---
-service_account_info = st.secrets["google_service_account"]
+service_account_info = st.secrets["google_service_account_learning_council"]
 scopes = ["https://www.googleapis.com/auth/spreadsheets", "https://www.googleapis.com/auth/drive"]
 credentials = Credentials.from_service_account_info(service_account_info, scopes=scopes)
 gc = gspread.authorize(credentials)
